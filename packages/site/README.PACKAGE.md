@@ -1,0 +1,76 @@
+## packges.json 依赖说明
+
+dependencies
+
+- [@ant-design/colors](https://github.com/ant-design/ant-design-colors) - antd 色板生成器
+- [@ant-design/icons-vue](https://github.com/ant-design/ant-design-icons/tree/master) - antd 语义化矢量图形库
+- [@iconify/iconify](https://github.com/iconify/iconify) - 通用的图标框架
+- [@logicflow/core](https://github.com/didi/LogicFlow) - 流程图编辑框架
+- [@logicflow/extension](https://github.com/didi/LogicFlow) - LogicFlow 扩展包
+- [@vue/shared](https://github.com/vuejs/core/tree/main/packages/shared#readme) - @vue跨包共享的内部实用程序函数和常量。
+- [@vueuse/core](https://github.com/vueuse/vueuse#readme) - 基本 Vue 组合实用程序的集合
+- [@vueuse/shared](https://github.com/vueuse/vueuse/tree/main/packages/shared#readme) - @vueuse跨包共享的内部实用程序函数和常量。
+- [@zxcvbn-ts/core](https://github.com/zxcvbn-ts/zxcvbn) - 密码强度检测库
+- [codemirror](https://github.com/codemirror/CodeMirror) - 通用文本编辑器
+- [cropperjs](https://github.com/fengyuanchen/cropperjs) - 图像裁剪器
+- [crypto-js](https://github.com/brix/crypto-js) - 加密标准的 JavaScript 库
+- [dayjs](https://github.com/iamkun/dayjs) - 解析、验证、操作和显示现代浏览器的日期和时间的js库
+- [intro.js](https://github.com/usablica/intro.js) - 用户指引
+- [path-to-regexp](https://github.com/pillarjs/path-to-regexp) - 将路径字符串等/user/:name转换为正则表达式
+- [pinia](https://github.com/vuejs/pinia) - Vue Store
+- [print-js](https://github.com/crabbly/Print.js) - Web 打印
+- [qrcode](https://github.com/soldair/node-qrcode) - 二维码/二维条码生成器
+- [qs](https://github.com/ljharb/qs) - 查询字符串解析和字符串化库
+- [resize-observer-polyfill](https://github.com/que-etc/resize-observer-polyfill) - Resize Observer API 的 polyfill
+- [showdown](https://github.com/showdownjs/showdown) - Markdown 到 HTML 的转换器
+- [sortablejs](https://github.com/SortableJS/Sortable) - 可重新排序的拖放列表的 JavaScript 库
+- [tinymce](https://github.com/tinymce/tinymce) - 开源富文本编辑器
+- [vditor](https://github.com/Vanessa219/vditor) - Markdown 编辑器
+- [vue-json-pretty](https://github.com/leezng/vue-json-pretty) - JSON 美化工具
+- [vue-types](https://github.com/dwightjack/vue-types) - Vue.js 组件的可配置属性类型定义集合
+
+devDependencies
+
+- [@commitlint/cli](https://github.com/conventional-changelog/commitlint) - 
+- [@commitlint/config-conventional](https://github.com/commitizen/cz-cli) - 前端提交信息规范
+- [@iconify/json](https://github.com/iconify/icon-sets) - 图标化 JSON 格式的图标集
+- [@vitejs/plugin-legacy](https://github.com/vitejs/vite) - 此插件为不支持本机 ESM 的旧版浏览器提供支持
+- [@vitejs/plugin-vue](https://github.com/vitejs/vite) - vite中vue插件
+- [@vitejs/plugin-vue-jsx](https://github.com/vitejs/vite) - 通过HMR提供Vue3 JSX和TSX支持。
+- [@vue/compiler-sfc](https://github.com/vuejs/core) - 用于编译 Vue 单文件组件的低级实用程序
+- [@vue/test-utils](https://github.com/vuejs/vue-test-utils) - 测试
+- [autoprefixer](https://github.com/postcss/autoprefixer) - PostCSS插件用于解析 CSS 并使用 Can I Use中的值将供应商前缀添加到 CSS 规则中
+- [commitizen](https://github.com/commitizen/cz-cli) - 前端提交信息规范
+- [conventional-changelog-cli](https://github.com/conventional-changelog/conventional-changelog) - 常规更改日志存储库
+- [dotenv](https://github.com/motdotla/dotenv) - 将环境变量从.env文件加载到process.env
+- [esno](https://github.com/antfu/esno) - 由 esbuild 提供支持的 TypeScript / ESNext 节点运行时
+- [fs-extra](https://github.com/jprichardson/node-fs-extra) - fs模块
+- [husky](https://github.com/typicode/husky) - 为 git 客户端增加 hook 的工具
+- [inquirer](https://github.com/SBoudrias/Inquirer.js) - 常用交互式命令行用户界面的集合
+- [lint-staged](https://github.com/okonet/lint-staged) - 对暂存的 git 文件运行 linter
+- [npm-run-all](https://github.com/mysticatea/npm-run-all) - 用于并行或顺序运行多个 npm 脚本的 CLI 工具
+- [postcss](https://github.com/postcss/postcss) - 使用 JS 插件转换样式的工具
+- [postcss-html](https://github.com/ota-meshi/postcss-html) - 用于解析 HTML（和类似 HTML）的PostCSS语法
+- [postcss-less](https://github.com/shellscape/postcss-less) - PostCSS 的 LESS 解析器
+- [prettier](https://github.com/prettier/prettier) - 代码格式化程序
+- [rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer) - 可视化并分析您的 Rollup 捆绑包以查看哪些模块占用了空间
+- [stylelint](https://github.com/stylelint/stylelint) - 一个强大的现代 CSS linter
+- [stylelint-config-html](https://github.com/ota-meshi/stylelint-config-html) - Stylelint的可共享 HTML（和类似 HTML）配置
+- [stylelint-config-prettier](https://github.com/prettier/stylelint-config-prettier) - 关闭所有不必要或可能与 Prettier 冲突的规则
+- [stylelint-config-recommended](https://github.com/stylelint/stylelint-config-recommended) - Stylelint 推荐的可共享配置
+- [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) - Stylelint 的标准可共享配置
+- [stylelint-order](https://github.com/hudochenkov/stylelint-order) - Stylelint的与订单相关的linting规则插件包，每个规则都支持自动修复 ( stylelint --fix)
+- [vite-plugin-mkcert](https://github.com/liuweiGL/vite-plugin-mkcert) - 使用 mkcert 为 vite https 开发服务提供证书支持
+- [vite-plugin-purge-icons](https://github.com/antfu/purge-icons) - 它分析您的源代码或 dist 文件，提取您使用的图标名称，然后将图标的数据 (SVG) 捆绑到您的代码中
+- [vite-plugin-pwa](https://github.com/antfu/vite-plugin-pwa) - Vite 配置 PWA 框架
+- [vite-plugin-vue-setup-extend](https://github.com/vbenjs/vite-plugin-vue-setup-extend) - 使 vue 脚本设置语法支持 name 属性
+- [vite-plugin-windicss](https://github.com/windicss/vite-plugin-windicss) - Windi CSS for Vite
+- [vite-plugin-mock](https://github.com/anncwb/vite-plugin-mock) - 用于本地及开发环境数据 mock
+- [vite-plugin-html](https://github.com/anncwb/vite-plugin-html) - 用于 html 模版转换及压缩
+- [vite-plugin-style-import](https://github.com/anncwb/vite-plugin-style-import) - 用于组件库样式按需引入
+- [vite-plugin-theme](https://github.com/anncwb/vite-plugin-theme) - 用于在线切换主题色等颜色相关配置
+- [vite-plugin-imagemin](https://github.com/anncwb/vite-plugin-imagemin) - 用于打包压缩图片资源
+- [vite-plugin-compression](https://github.com/anncwb/vite-plugin-compression) - 用于打包输出.gz|.brotil 文件
+- [vite-plugin-svg-icons](https://github.com/anncwb/vite-plugin-svg-icons) - 用于快速生成 svg 雪碧图
+- [vue-eslint-parser](https://github.com/vuejs/vue-eslint-parser) - 文件的 ESLint 自定义解析器.vue
+- [vue-tsc](https://github.com/johnsoncodehk/volar) - 类型检查和 dts 构建命令行工具
