@@ -2,6 +2,9 @@ import fs from 'fs';
 import path from 'path';
 import dotenv from 'dotenv';
 
+import packageJson from '../../../package.json';
+export const pkg = packageJson;
+
 export function isDevFn(mode: string): boolean {
   return mode === 'development';
 }
@@ -9,6 +12,8 @@ export function isDevFn(mode: string): boolean {
 export function isProdFn(mode: string): boolean {
   return mode === 'production';
 }
+
+
 
 /**
  * Whether to generate package preview

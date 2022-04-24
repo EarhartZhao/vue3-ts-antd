@@ -1,7 +1,7 @@
 import type { GlobEnvConfig } from '/#/config';
 
 import { warn } from '/@/utils/log';
-import pkg from '../../package.json';
+import { pkg } from '../../build/utils';
 import { getConfigFileName } from '../../build/getConfigFileName';
 
 export function getCommonStoragePrefix() {

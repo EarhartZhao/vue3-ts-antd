@@ -8,7 +8,7 @@ import colors from 'picocolors';
 import { getEnvConfig, getRootPath } from '../utils';
 import { getConfigFileName } from '../getConfigFileName';
 
-import pkg from '../../package.json';
+import { pkg } from '../utils';
 
 interface CreateConfigParams {
   configName: string;

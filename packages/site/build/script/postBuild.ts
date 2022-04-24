@@ -3,7 +3,7 @@
 import { runBuildConfig } from './buildConf';
 import colors from 'picocolors';
 
-import pkg from '../../package.json';
+import { pkg } from '../utils';
 
 export const runBuild = async () => {
   try {

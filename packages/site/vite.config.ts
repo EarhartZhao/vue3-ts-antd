@@ -1,5 +1,5 @@
 import type { UserConfig, ConfigEnv } from 'vite';
-import pkg from './package.json';
+import { pkg } from './build/utils';
 import dayjs from 'dayjs';
 import { loadEnv } from 'vite';
 import { resolve } from 'path';
@@ -8,6 +8,7 @@ import { createProxy } from './build/vite/proxy';
 import { wrapperEnv } from './build/utils';
 import { createVitePlugins } from './build/vite/plugin';
 import { OUTPUT_DIR } from './build/constant';
+import path from 'path';
 
 function pathResolve(dir: string) {
   return resolve(process.cwd(), '.', dir);
@@ -20,8 +21,8 @@ const __APP_INFO__ = {
 };
 
 export default ({ command, mode }: ConfigEnv): UserConfig => {
-  const root = process.cwd();
-  const rootEnv = pathResolve('env');
+  const root = './packages/site/';
+  const rootEnv = pathResolve('./packages/site/env');
 
   const env = loadEnv(mode, rootEnv);
 
@@ -52,6 +53,14 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
           find: /\/#\//,
           replacement: pathResolve('types') + '/',
         },
+        {
+          find: 'ant-design-test/es',
+          replacement: path.resolve(__dirname, '../components'),
+        },
+        {
+          find: 'ant-design-test',
+          replacement: path.resolve(__dirname, '../components'),
+        },
       ],
     },
     server: {
@@ -61,6 +70,10 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
       port: VITE_PORT,
       // Load proxy configuration from .env
       proxy: createProxy(VITE_PROXY),
+      fs: {
+        strict: false,
+        allow: []
+      }
     },
     esbuild: {
       pure: VITE_DROP_CONSOLE ? ['console.log', 'debugger'] : [],

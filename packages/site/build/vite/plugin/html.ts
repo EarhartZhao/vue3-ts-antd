@@ -4,7 +4,7 @@
  */
 import type { PluginOption } from 'vite';
 import { createHtmlPlugin } from 'vite-plugin-html';
-import pkg from '../../../package.json';
+import { pkg } from '../../utils';
 import { GLOB_CONFIG_FILE_NAME } from '../../constant';
 
 export function configHtmlPlugin(env: ViteEnv, isBuild: boolean) {

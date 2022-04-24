@@ -2,7 +2,7 @@ import path from 'path';
 import fs from 'fs-extra';
 import inquirer from 'inquirer';
 import colors from 'picocolors';
-import pkg from '../../../package.json';
+import { pkg } from '../..//utils';
 
 async function generateIcon() {
   const dir = path.resolve(process.cwd(), 'node_modules/@iconify/json');
