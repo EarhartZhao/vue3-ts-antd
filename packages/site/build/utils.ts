@@ -76,7 +76,7 @@ export function getEnvConfig(match = 'VITE_GLOB_', confFiles = getConfFiles()) {
   let envConfig = {};
   confFiles.forEach((item) => {
     try {
-      const env = dotenv.parse(fs.readFileSync(path.resolve(process.cwd(), item)));
+      const env = dotenv.parse(fs.readFileSync(path.resolve(process.cwd(), './packages/site/env/', item)));
       envConfig = { ...envConfig, ...env };
     } catch (e) {
       console.error(`Error in parsing ${item}`, e);
@@ -96,5 +96,5 @@ export function getEnvConfig(match = 'VITE_GLOB_', confFiles = getConfFiles()) {
  * @param dir file path
  */
 export function getRootPath(...dir: string[]) {
-  return path.resolve(process.cwd(), ...dir);
+  return path.resolve(process.cwd(),'./packages/site/', ...dir);
 }

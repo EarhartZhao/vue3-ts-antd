@@ -11,7 +11,7 @@ import { OUTPUT_DIR } from './build/constant';
 import path from 'path';
 
 function pathResolve(dir: string) {
-  return resolve(process.cwd(), '.', dir);
+  return resolve(process.cwd(), './packages/site/', dir);
 }
 
 const { dependencies, devDependencies, name, version } = pkg;
@@ -21,8 +21,9 @@ const __APP_INFO__ = {
 };
 
 export default ({ command, mode }: ConfigEnv): UserConfig => {
-  const root = './packages/site/';
-  const rootEnv = pathResolve('./packages/site/env');
+  // const root = '/packages/site/';
+  const root = './';
+  const rootEnv = pathResolve('env');
 
   const env = loadEnv(mode, rootEnv);
 
