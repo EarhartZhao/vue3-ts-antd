@@ -9,8 +9,8 @@
   "scripts": {
     "commit": "czg",
     "bootstrap": "pnpm install",
-    "serve:site": "cross-env PROJECT_NAME=site vite serve packages/site",
-    "serve:site-pro": "cross-env PROJECT_NAME=site-pro vite serve packages/site-pro",
+    "serve:site": "cross-env vite serve packages/site",
+    "serve:site-pro": "cross-env vite serve packages/site-pro",
     "build:site": "cross-env NODE_ENV=production vite build packages/site && esno packages/site/build/script/postBuild.ts",
     "build:site-pro": "cross-env NODE_ENV=production vite build packages/site-pro && esno packages/site-pro/build/script/postBuild.ts",
     "build:test": "cross-env vite build --mode test && esno ./build/script/postBuild.ts",
