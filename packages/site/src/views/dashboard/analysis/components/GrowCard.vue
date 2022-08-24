@@ -17,6 +17,8 @@
           <Icon :icon="item.icon" :size="40" />
         </div>
 
+        <Button>11111</Button>
+
         <div class="p-2 px-4 flex justify-between">
           <span>总{{ item.title }}</span>
           <CountTo prefix="$" :startVal="1" :endVal="item.total" />
@@ -29,6 +31,7 @@
   import { CountTo } from '/@/components/CountTo/index';
   import { Icon } from '/@/components/Icon';
   import { Tag, Card } from 'ant-design-vue';
+  import { Button } from 'ant-design-test';
   import { growCardList } from '../data';
 
   defineProps({
