@@ -16,6 +16,7 @@ export interface GenerateColorsParams {
 }
 
 export function generateAntColors(color: string, theme: GenerateTheme = 'default') {
+  // Generate dark color palettes by a given color
   return generate(color, {
     theme,
   });
